@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members - LTLR Lab</title>
+    <style>
+        /* 1. 기본 설정 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1c2e4a; /* 스크린샷의 진한 남색 배경 */
+            color: white;
+        }
+
+        /* 2. 네비게이션 바 (메인과 통일감 유지하되 배경색에 맞춤) */
+        nav {
+            padding: 20px 40px;
+            text-align: right;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* 3. 전체 레이아웃 컨테이너 */
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        /* 4. 섹션 제목 (Principal Investigators 등) */
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 10px;
+        }
+
+        /* 5. 멤버 리스트 (그리드 형태) */
+        .member-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px; /* 멤버 사이 간격 */
+        }
+
+        /* 개별 멤버 카드 */
+        .member-card {
+            width: 250px; /* 사진 크기에 맞춰 조절 가능 */
+            text-align: left;
+        }
+
+        /* 멤버 사진 */
+        .member-photo {
+            width: 100%;
+            height: 250px; /* 정사각형 비율 */
+            object-fit: cover;
+            background-color: #ccc; /* 이미지가 없을 때 회색 배경 */
+            margin-bottom: 15px;
+        }
+
+        /* 이름 */
+        .name {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* 직책 */
+        .role {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        /* 설명/이메일 */
+        .desc {
+            font-size: 0.85rem;
+            color: #ccc;
+            line-height: 1.5;
+        }
+
+        .desc a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dotted #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="publications.html">PUBLICATIONS</a>
+        <a href="members.html">MEMBERS</a>
+        <a href="news.html">NEWS</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="section-title">Principal Investigators</div>
+        <div class="member-grid">
+            
+            <div class="member-card">
+                <img src="placeholder.jpg" alt="Wonseok Kang" class="member-photo">
+                <div class="name">Wonseok Kang</div>
+                <div class="role">Professor</div>
+                <div class="desc">
+                    wskang.md@gmail.com
+                </div>
+            </div>
+
+            <div class="member-card">
+                <img src="placeholder.jpg" alt="Yeup Yoon" class="member-photo">
+                <div class="name">Yeup Yoon</div>
+                <div class="role">Chair Professor</div>
+                <div class="desc">
+                    텍스트를 수정하려면 클릭하세요.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-title">Postdoc</div>
+        <div class="member-grid">
+            
+            <div class="member-card">
+                <img src="placeholder.jpg" alt="Ji Young Kim" class="member-photo">
+                <div class="name">Ji Young Kim</div>
+                <div class="role">Postdoc Researcher</div>
+                <div class="desc">
+                    Cancer Immunotherapy,<br>
+                    Liver Disease,<br>
+                    Translational Research<br><br>
+                    kimjiyoung0622@gmail.com
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-title">Ph.D Student</div>
+        <div class="member-grid">
+            
+            <div class="member-card">
+                <img src="kim_nahyun.jpg" alt="Student Name" class="member-photo">
+                <div class="name">Student Name</div>
+                <div class="role">Ph.D Student</div>
+                <div class="desc">Research Interest...</div>
+            </div>
+
+             <div class="member-card">
+                <img src="placeholder.jpeg" alt="Student Name" class="member-photo">
+                <div class="name">Student Name</div>
+                <div class="role">Ph.D Student</div>
+                <div class="desc">Research Interest...</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
