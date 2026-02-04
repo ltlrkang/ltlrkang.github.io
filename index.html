@@ -2,28 +2,179 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LTLR Lab</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 0; }
-        nav { background: #004b94; padding: 1rem; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .container { max-width: 1000px; margin: auto; padding: 20px; text-align: center; }
-        .main-image { width: 100%; max-width: 800px; height: auto; border-radius: 10px; margin-top: 20px; }
+        /* 1. 기본 설정 및 폰트 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white; /* 전체 글씨색 흰색 */
+        }
+
+        /* 2. 배경 이미지 설정 */
+        .bg-image {
+            /* 업로드하신 이미지 파일명 */
+            background-image: url('SMC.jpg');
+            
+            /* 이미지가 화면을 꽉 채우고 스크롤해도 고정되게 */
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            
+            /* 이미지가 너무 밝으면 글씨가 안 보이므로 어둡게 처리 */
+            position: relative;
+        }
+
+        /* 3. 검은색 반투명 오버레이 (글씨 잘 보이게) */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6); /* 0.6이 투명도 (조절 가능) */
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow-y: auto; /* 내용이 많으면 스크롤 */
+        }
+
+        /* 4. 상단 네비게이션 메뉴 */
+        nav {
+            padding: 20px 40px;
+            text-align: right;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* 5. 메인 콘텐츠 컨테이너 */
+        .container {
+            max-width: 800px;
+            margin: 100px auto; /* 상단 여백 100px */
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* 제목 스타일 */
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            word-break: keep-all; /* 한글 단어 끊김 방지 */
+        }
+
+        /* 리스트 스타일 (가운데 정렬하면서 깔끔하게) */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        /* 6. 하단 푸터 */
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="news.html">News</a>
-        <a href="publication.html">Publication</a>
-        <a href="members.html">Members</a>
-    </nav>
+    <div class="bg-image">
+        <div class="overlay">
+            
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="publications.html">PUBLICATIONS</a>
+                <a href="members.html">MEMBERS</a>
+                <a href="news.html">NEWS</a>
+                </nav>
 
-    <div class="container">
-        <h1>Samsung Medical Center Project</h1>
-        <img src="삼성서울병원메인.webp" alt="삼성서울병원 메인 이미지" class="main-image">
+            <div class="container">
+                <h1>LTLR Lab</h1>
+
+                <p>
+                    LTLR 연구실에 오신 것을 환영합니다.<br>
+                    저희 연구실은 인공지능과 데이터 분석을 활용하여<br>
+                    의료 및 다양한 분야의 문제를 해결하는 연구를 진행합니다.
+                </p>
+                <p>
+                    특히 Multi-modal 데이터를 활용한 딥러닝 모델링과<br>
+                    임상 데이터 분석에 강점을 가지고 있습니다.
+                </p>
+
+                <h2>RECRUITING</h2>
+                <p>
+                    AI/ML 기술과 도메인 지식을 융합하여 의미 있는 연구를 수행할<br>
+                    열정 있는 석사/박사 과정 및 학부 연구생을 모집합니다.<br>
+                    관심 있으신 분은 메일로 연락 주세요.
+                </p>
+
+                <h2>KEYWORDS</h2>
+                <ul>
+                    <li>Deep Learning</li>
+                    <li>Machine Learning</li>
+                    <li>Medical AI</li>
+                    <li>Big Data Analysis</li>
+                </ul>
+
+                <h2>R&D PROJECTS</h2>
+                <ul>
+                    <li>Multi-Omics Integrative Method for Drug Response</li>
+                    <li>Medical Image Analysis with AI</li>
+                    <li>Clinical Data Science Project</li>
+                </ul>
+
+            </div>
+
+            <footer>
+                &copy; 2024 LTLR Lab. All Rights Reserved.
+            </footer>
+
+        </div>
     </div>
 
 </body>
