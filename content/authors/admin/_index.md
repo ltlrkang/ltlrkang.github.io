@@ -8,11 +8,6 @@ organizations:
   - name: Samsung Medical Center · Sungkyunkwan University School of Medicine
     url: ''
 bio: Translational research to overcome liver diseases.
-interests:
-  - Viral Hepatitis / Chronic Hepatitis
-  - Liver Cirrhosis / MASLD (Fatty Liver Disease)
-  - Hepatocellular Carcinoma (Liver Cancer)
-  - Liver Transplantation / Autoimmune Liver Disease
 education:
   courses:
     - course: Ph.D. in Medical Science
