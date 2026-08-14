@@ -8,6 +8,7 @@ organizations:
   - name: Samsung Medical Center · Sungkyunkwan University School of Medicine
     url: ''
 bio: Translational research to overcome liver diseases.
+interests: []
 education:
   courses:
     - course: Ph.D. in Medical Science
