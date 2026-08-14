@@ -20,14 +20,14 @@ main:
     url: people/researcher/
     parent: People
     weight: 32
-  - name: Projects
-    url: event
-    weight: 40
   - name: Publication
     url: publication
-    weight: 50
+    weight: 40
   - name: News
     url: post
+    weight: 50
+  - name: Photos
+    url: Lab-photos
     weight: 60
   - name: Contact
     url: contact
